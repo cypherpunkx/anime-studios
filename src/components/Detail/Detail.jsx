@@ -62,7 +62,7 @@ function Detail({ anime }) {
 
             <section className='my-8'>
                 <h1 className='text-center text-2xl mb-6 text-yellow-400 tracking-widest uppercase'>Episodes</h1>
-                <ul className='grid grid-cols-5 gap-4 place-content-center'>
+                <ul className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-4 place-content-center'>
                     {episodesList?.slice(0, listItem).map((list, i) => {
                         const { episodeId, episodeNum, episodeUrl } = list
                         return <li key={i}>
